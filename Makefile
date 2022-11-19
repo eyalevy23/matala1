@@ -4,7 +4,7 @@ FLAGS= -Wall -g
 
 # all: clean loops recursives recursived loopd
 # 	$(CC) $(FLAGS) basicClassification.c advancedClassificationLoop.c NumClass.h main.c -o main.out
-all: mains maindloop maindrec mainsloop
+all: recursives loopd loops recursived mains maindloop maindrec 
 # all: loops recursives
 
 
@@ -34,15 +34,13 @@ libclassloops.so:
 	$(CC) -c basicClassification.c advancedClassificationLoop.c 
 	$(CC) -shared -o libclassloops.so basicClassification.o advancedClassificationLoop.o 
 
-mainsloop:  loops
-
-mains: recursives
+mains: 
 	$(CC) $(FLAGS)  main.c  libclassrec.a -o mains
 
-maindloop: loopd 
+maindloop:  
 	$(CC) $(FLAGS)  main.c  -o maindloop ./libclassloops.so
 
-maindrec: recursived
+maindrec: 
 	$(CC) $(FLAGS)  main.c  -o maindrec ./libclassrec.so
 
 run:
