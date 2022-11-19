@@ -1,5 +1,5 @@
 
-
+# GCC Instructions
 gcc -o - will create a runnable file that will include isinde it a main function. can work with c files and a file
     when linking a dynamic library (.so) use command l<libname> (name without lib prefix and .so sufix)
 gcc -o -shared - will create a dynamic link lib. format of file name is lib<name>.so and list of files is .o (compiled files)
