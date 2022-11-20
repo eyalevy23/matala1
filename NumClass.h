@@ -11,7 +11,7 @@
     int reverseInt(int num);
     int isArmstrong(int num);
     int reverseIntRec(int num, int rev);
-    int armstrongCalc(int num, int armstrong);
+    int armstrongCalc(int num, int armstrong, int len);
 
 #endif
  
