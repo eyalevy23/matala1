@@ -1,4 +1,5 @@
 #include "NumClass.h"
+#include <math.h>
 
 int isPolindrome(int num) {
     int reverse = reverseInt(num);

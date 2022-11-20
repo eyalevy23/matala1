@@ -1,4 +1,5 @@
 #include "NumClass.h"
+#include <stdio.h>
 
 void printPrime(int from, int to) {
     printf("The Prime numbers are:");
