@@ -43,9 +43,6 @@ maindloop:
 maindrec: 
 	$(CC) $(FLAGS)  main.c  -o maindrec ./libclassrec.so
 
-run:
-	./main.out
-
 clean: 
 	rm -f *.out *.o  *.a *.so mains maindloop maindrec
  
