@@ -2,11 +2,7 @@ CC=gcc
 AR = ar
 FLAGS= -Wall -g
 
-# all: clean loops recursives recursived loopd
-# 	$(CC) $(FLAGS) basicClassification.c advancedClassificationLoop.c NumClass.h main.c -o main.out
 all: recursives loopd loops recursived mains maindloop maindrec 
-# all: loops recursives
-
 
 loops: libclassloops.a
 
@@ -44,14 +40,5 @@ maindrec:
 	$(CC) $(FLAGS)  main.c  -o maindrec ./libclassrec.so -lm
 
 clean: 
-	rm -f *.out *.o  *.a *.so mains maindloop maindrec
+	rm -f  *.o  *.a *.so mains maindloop maindrec
  
-
-
-# libclassloops.a
-
-# advancedClassificationRecursion
-# basicClassification
-# NumClass
-
-# clean : rm -r libclassloop.a
