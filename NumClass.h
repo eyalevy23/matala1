@@ -2,6 +2,7 @@
 #define NUMCLASS_H
 
 #include <stdio.h>
+#include <math.h>
 
     int isStrong(int num);
     int factorial(int num);

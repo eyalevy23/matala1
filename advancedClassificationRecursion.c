@@ -13,16 +13,17 @@ int reverseIntRec(int num, int reverse) {
 }
 
 int isArmstrong(int num) {
-    int armstrong = armstrongCalc(num, 0); // call recursive function// call recursive function
+    int armstrong = armstrongCalc(num, 0, 0); // call recursive function// call recursive function
     return num == armstrong;
 }
 
-int armstrongCalc(int num, int armstrong){
+int armstrongCalc(int num, int armstrong, int len){
+    len = ((int)log10(num)) +1;
     if (num == 0) {
         return armstrong;
     }
     int lastDigit = num%10;
     armstrong = armstrong + (lastDigit*lastDigit*lastDigit);
-    return armstrongCalc(num/10, armstrong);
+    return armstrongCalc(num/10, armstrong, len);
 }
 

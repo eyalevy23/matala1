@@ -16,11 +16,12 @@ int reverseInt(int num) {
 }
 
 int isArmstrong(int num) {
+    int len = ((int)log10(num)) +1;
     int copyNum = num, lastDigit;
     int amstrong = 0;
     while (0 < copyNum) {
         lastDigit = copyNum % 10;
-        amstrong = amstrong + (lastDigit*lastDigit*lastDigit);
+        amstrong = amstrong + (pow(lastDigit, len));
         copyNum /= 10;
     }
     return num == amstrong;
