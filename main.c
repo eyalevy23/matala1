@@ -1,6 +1,7 @@
 #include "NumClass.h"
 #include <stdio.h>
 
+// print prime number 
 void printPrime(int from, int to) {
     printf("The Prime numbers are:");
     for(int i = from; i <= to; i++) {
@@ -11,6 +12,7 @@ void printPrime(int from, int to) {
     printf("\n");
 }
 
+// print amstrong number 
 void printAmstrong(int from, int to) {
     printf("The Armstrong numbers are:");
     for(int i=from; i<=to; i++) {
@@ -21,6 +23,7 @@ void printAmstrong(int from, int to) {
     printf("\n");
 }
 
+// print strong number
 void printStrong(int from, int to) {
     printf("The Strong numbers are:");
     for(int i=from; i<=to; i++) {
@@ -31,6 +34,7 @@ void printStrong(int from, int to) {
     printf("\n");
 }
 
+// print polindrome number
 void printPolindrome(int from, int to) {
     printf("The Palindromes are:");
     for(int i=from; i<=to; i++) {

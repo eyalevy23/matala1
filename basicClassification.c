@@ -1,5 +1,6 @@
 #include "NumClass.h"
 
+// will return if number is strong
 int isStrong(int num) {
     int userInput = num, sum = 0, lastDigit;
     while (0 < num) {
@@ -10,6 +11,7 @@ int isStrong(int num) {
     return sum == userInput;
 }
 
+// return factorial of num
 int factorial(int num) {
     int fct = 1;
     for(int i = num; i > 1; i--) {
@@ -18,6 +20,7 @@ int factorial(int num) {
     return fct;
 }
 
+// will return if number is prime
 int isPrime(int num) {
     if (num == 1 || num == 0){
         return num;
