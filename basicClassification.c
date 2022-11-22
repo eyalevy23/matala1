@@ -2,6 +2,7 @@
 
 // will return if number is strong
 int isStrong(int num) {
+    if(num ==0) return 0;
     int userInput = num, sum = 0, lastDigit;
     while (0 < num) {
         lastDigit = num%10;
