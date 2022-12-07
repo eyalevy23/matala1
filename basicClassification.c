@@ -26,7 +26,8 @@ int isPrime(int num) {
     if (num == 1 || num == 0){
         return num;
     }
-    for(int i = 2; i<num; i++) {
+    //check from 2 to sqer root of num 
+    for(int i = 2; i*i < num; i++) {
         if(num % i == 0){
             return 0;
         }
